@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+    }
+    .carousel {
+      width: 100%;
+      overflow: scroll;
+      padding: 30px;
+      position: relative;
+    }
+    .carousel__container {
+      white-space: nowrap;
+      margin: 70px 0px;
+      padding-bottom: 10px;
+    }
+    .carousel__item {
+      background-color: peru;
+      width: 200px;
+      height: 250px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-right: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .carousel__item:hover{
+      transform: translate3d(100px,0,0);
+    }
+  </style>
+  <body>
+    <section class="carousel">
+      <div class="carousel__container">
+        <div class="carousel__item"></div>
+        <div class="carousel__item"></div>
+      </div>
+    </section>
+  </body>
+</html>
