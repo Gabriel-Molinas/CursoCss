@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+.header {
+  align-items: center;
+  background-color: #21c08b;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+.header__img {
+  margin-left: 20px;
+  width: 80px;
+}
+.error {
+  background: linear-gradient(#21c08b, #ab88ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.animated--2 {
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+  }
+}
+.hinge {
+  animation-name: hinge;
+}
+
+.error__title {
+  color: white;
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
+}
+.error__sub-title {
+  color: white;
+  margin: 0;
+  font-size: 30px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: #ab88ff;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}

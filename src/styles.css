@@ -74,10 +74,8 @@ ul:hover {
 }
 .categories__title {
   color: white;
-  font-size: 16px;
-  position: absolute;
+  font-size: 20px;
   padding-left: 30px;
-  width: 100%;
 }
 .input {
   background-color: rgba(255, 255, 255, 0.1);
@@ -95,8 +93,9 @@ ul:hover {
   color: white;
 }
 .carousel {
-  width: 100%;
-  overflow: none;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   padding-left: 20px;
   position: relative;
 }
@@ -173,11 +172,16 @@ ul:hover {
   font-family: "Mulish", sans-serif;
   font-size: 12px;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+}
 .footer a {
   color: white;
   cursor: pointer;
   font-size: 14px;
   padding-left: 30px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
 .footer a:hover {
